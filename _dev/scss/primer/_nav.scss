@@ -1,0 +1,144 @@
+// ---------------------------------------------------------------------
+//  Nav Styles
+// ---------------------------------------------------------------------
+
+.UnderlineNav {
+    text-align: right;
+    justify-content: center;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.UnderlineNav-body {
+    width: 100%;
+    max-width: 480px;
+    justify-content: center;
+
+    @include stop-at($medium){
+        display: flex;
+        justify-content: space-between;
+
+        .UnderlineNav-item {
+            margin-right: 0;
+            padding: 12px 4px;
+            font-size: 12px;
+        }
+    }
+}
+
+.UnderlineNav-item {
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &.selected {
+        border-bottom-color: $blue-500;
+        font-weight: normal;
+    }
+}
+
+
+.UnderlineNav__inner {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1600px;
+    z-index: 1;
+
+    > *:first-child {
+        padding: 24px 0 16px;
+    }
+
+    .UnderlineNav__title {
+        display: none;
+    }
+
+    @include breakpoint(md) {
+
+        > *:first-child {
+            justify-content: flex-start;
+            padding: 0;
+
+            .text-bold {
+                padding-right: 8px;
+            }
+        }
+
+        .UnderlineNav__title {
+            display: block;
+            position: absolute;
+            left: 0;
+            //max-width: 640px;
+            width: 50%;
+            text-align: left;
+            padding: 0 24px;
+            z-index: -1;
+
+            > * {
+                max-width: 640px;
+                margin: 0 auto;
+            }
+
+
+        }
+    }
+
+    @include breakpoint(lg) {
+        // .UnderlineNav__title {
+        //     left: 40px;
+        // }
+    }
+}
+
+
+
+// ----------------------------------------
+// Side nav
+// ----------------------------------------
+
+.side-nav {
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+        width: 240px;
+        min-width: 220px;
+        position: sticky;
+        top: 66px;
+    }
+
+    .side-nav__title {
+        padding: 0 12px;
+        margin-bottom: 8px;
+    }
+    ul {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 500;
+        color: #586069;
+        padding: 6px 12px;
+        display: block;
+        line-height: 1;
+        background: $white;
+        transition: background $trans, color $trans;
+        border-radius: 4px;
+
+        &:hover {
+            background: #F6F8FA;
+        }
+
+        &.selected {
+            color: $white;
+            background: $blue-500;
+        }
+    }
+}

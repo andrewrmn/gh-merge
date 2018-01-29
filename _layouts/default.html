@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- META DATA -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+        <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
+        <meta name="theme-color" content= "#1A1D1E">
+
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+        <title>{{ site.title }} | {{ page.title }}</title>
+
+        <link href="/assets/css/main.css" rel="stylesheet">
+
+        <link rel="shortcut icon" type="image/ico" href="/assets/images/favicons/favicon.png" />
+        <link rel="apple-touch-icon" href="/assets/images/favicons/apple-touch-icon.png" />
+        <link rel="icon" href="/assets/images/favicons/android-favicon.png">
+    </head>
+
+    <body>
+        <a href="#content" class="sr-only">Skip to content</a>
+        {% include header.html %}
+
+        <main id="content" class="main page-content" aria-label="Content" role="main">
+            {{ content }}
+        </main>
+
+        {% include footer.html %}
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="/assets/js/TweenMax.min.js"></script>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>

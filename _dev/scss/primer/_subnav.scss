@@ -1,0 +1,21 @@
+// ---------------------------------------------------------------------
+//  Sub Nav
+// ---------------------------------------------------------------------
+
+.subnav {
+    margin: 0 auto;
+}
+
+.subnav-item {
+    background: $white;
+    font-size: 14px;
+}
+
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__content:first-of-type {
+    display: block;
+}

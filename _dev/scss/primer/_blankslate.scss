@@ -1,0 +1,123 @@
+// ---------------------------------------------------------------------
+//  Blankslate
+// ---------------------------------------------------------------------
+
+.blankslate {
+    // Reset
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    // New Styles
+	overflow: hidden;
+	padding: 60px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	min-height: 300px;
+	background: $black;
+
+	figure {
+		padding: 0;
+		z-index: 1;
+		background: transparent;
+	}
+
+	&.blankslate--dark {
+		height: 378px;
+
+		&:after {
+			content: '';
+			display: block;
+			z-index: -1;
+			@include cover-parent;
+			mix-blend-mode: multiply;
+			 background: rgba(36,41,46,.8);
+		}
+
+		figure {
+			padding: 0;
+			z-index: -2;
+			background: $black;
+		}
+	}
+
+    &.blankslate--tall {
+    	height: calc(100vh - 76px);
+    }
+
+	p a {
+		color: $gray-400;
+		text-decoration: underline;
+	}
+}
+
+
+// ----------------------------------------
+// Content
+// ----------------------------------------
+
+.blankslate__content {
+    position: relative;
+	z-index: 2;
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+
+// ----------------------------------------
+// Footer
+// ----------------------------------------
+
+.blankslate__footer {
+	position: absolute;
+	bottom: 12px;
+	left: 0;
+	padding: 0 12px;
+	max-width: 800px;
+	width: 50%;
+
+    @include breakpoint(md) {
+        padding: 0 24px;
+        bottom: 24px;
+    }
+
+	> * {
+		max-width: 640px;
+		margin: 0 auto;
+	}
+}
+
+
+// ----------------------------------------
+// Gradient
+// ----------------------------------------
+
+.blankslate--gradient {
+    position: relative;
+    background: linear-gradient(134deg, #3023AE 0%, #C86DD7 100%);
+    z-index: 1;
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: url('../images/flourishes/star-pattern.png') center / cover no-repeat;
+    }
+
+    .btn-outline-white:hover {
+        color: #3023AE;
+    }
+}

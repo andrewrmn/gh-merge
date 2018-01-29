@@ -1,0 +1,94 @@
+// ---------------------------------------------------------------------
+//  SCSS Settings
+// ---------------------------------------------------------------------
+
+
+// ----------------------------------------
+// Fonts
+// ----------------------------------------
+
+// Normal 10-Pitch: 300 | Normal | Medium" 500
+$sans-serif: 'Relative', mono, sans-serif;
+
+
+
+// ----------------------------------------
+// Font Size/ Line Height
+// ----------------------------------------
+$main-font: $sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+
+// ----------------------------------------
+// Colors
+// ----------------------------------------
+
+
+$brand: #FF6C81;
+
+$red: #EE4141;
+$yellow: #F5BF24;
+$pink: #FF6C81;
+$green: #67D3BE;
+$blue: #67BBEF;
+$purple: #8A65AA;
+
+
+
+$white: #fff;
+$black: #151515;
+$almost-black: #272727;
+$gray-dark: #323232;
+$gray: #8A8A8A;
+$gray-light: #F6F8FA;
+
+
+$error: #EE4141;
+
+
+// ----------------------------------------
+// Breakpoints
+// ----------------------------------------
+
+$xlarge: 1280px;
+$large: 1012px;
+$medium: 768px;
+$small: 544px;
+
+// $sm: 544px;
+// $md: 768px;
+// $lg: 1012px;
+// $xl: 1280px;
+
+
+
+@mixin start-at($device-width) {
+  @media (min-width: $device-width) {
+    @content;
+  }
+}
+
+
+
+@mixin stop-at($device-width) {
+  @media (max-width: $device-width - 1) {
+    @content;
+  }
+}
+
+
+// ----------------------------------------
+// Global Variables
+// ----------------------------------------
+
+$header-breakpoint: $small;
+
+$transition-speed: 0.4s;
+$transition: $transition-speed ease-out;
+// cuz I no type good
+$trans: $transition-speed ease-out;
+
+$wrapper-percentage: 94%;
+$wrapper-width: 1152px;
+$wrapper-padding: (100% - $wrapper-percentage) / 2;

@@ -1,0 +1,120 @@
+// // ---------------------------------------------------------------------
+// //  Link & Button Styles
+// // ---------------------------------------------------------------------
+
+
+$btn-width: 172px;
+$btn-height: 44px;
+
+.button {
+    display: block;
+    position: relative;
+    width: $btn-width;
+    height: $btn-height;
+    overflow: hidden;
+    z-index: 1;
+
+    .button__text {
+        position: absolute;
+        z-index: 3;
+        transform-origin: center;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        white-space: nowrap;
+        transform: translate3d(-50%, -50%, 0);
+        @include link;
+    }
+
+    &:after,
+    .button__hover:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $btn-width;
+        height: 100%;
+    }
+
+    &:after {
+        opacity: 0.1;
+        background: url('../images/button.svg') top left / $btn-width 100% no-repeat
+    }
+
+    .button__hover {
+        overflow: hidden;
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: 2;
+        transition: width 0.4s ease-out;
+
+        @include stop-at($medium) {
+            width: 100%;
+        }
+
+        &:after {
+            opacity: 0.3;
+            background: url('../images/button-hover.svg') top left / $btn-width 100% no-repeat
+        }
+    }
+
+    &:hover {
+
+        .button__hover {
+            width: 100%;
+        }
+    }
+}
+
+// ----------------------------------------
+// Arrow Link
+// ----------------------------------------
+
+.arrow-link {
+    @include link;
+    position: relative;
+    z-index: 1;
+    transition: color $trans;
+    //background: red;
+    padding-right: 40px;
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 20px;
+        z-index: -2;
+    }
+
+    &:before {
+        background: url('../images/svgs/arrow-right.svg') center / cover no-repeat;
+    }
+
+    &:after {
+        width: 0;
+        background: $black;
+        z-index: -1;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease, width  0.2s ease;
+    }
+
+    &:hover {
+        color: darken($pink, 5%);
+
+        &:after {
+            width: 24px;
+            transform: translateX(102%);
+        }
+    }
+
+
+}

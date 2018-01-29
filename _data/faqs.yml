@@ -1,0 +1,57 @@
+- headline: FAQ
+  subHeadline: There are countless things to know about GitHub Sponsorships, so we’ve assembled this FAQ to help guide sponsors, new and old. If you can’t find what you’re looking for, please <a href="mailto:events@github.com">Contact the Events Team</a>.
+  ctaText:
+  ctaLink:
+  cta2Text:
+  cta2Link:
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  featuredImg: marketing/faq-hero-bkg.jpg
+  featuredImgDesc: ElectronConf design
+
+  faqs:
+    - group: General
+      questions:
+        - question: This is a question right here that you can view and see?
+          answer: We will include some copy here that gives an <a href="">introduction</a> to the various options available for sponsorship.
+
+        - question: This is another question?
+          answer: Codecov provides highly integrated tools to group, merge, archive and compare coverage reports. Whether your team is comparing changes in a pull request or reviewing a single commit, Codecov will improve the code review workflow and quality.
+
+        - question: This is a question right here that you can view and see?
+          answer: Proin ipsum est, tempor eget vulputate a, gravida id metus. In id odio tempor purus ultricies mattis. Nam vulputate eros quis congue varius. Morbi vulputate eu velit in bibendum. Suspendisse potenti. Sed convallis, erat vel.
+
+
+    - group: Pricing Stuff
+      questions:
+        - question: This is a question right here that you can view and see?
+          answer: Proin ipsum est, tempor eget vulputate a, gravida id metus. In id odio tempor purus ultricies mattis. Nam vulputate eros quis congue varius. Morbi vulputate eu velit in bibendum. Suspendisse potenti. Sed convallis, erat vel.
+
+        - question: This is a question right here that you can view and see?
+          answer: We will include some copy here that gives an <a href="">introduction</a> to the various options available for sponsorship.
+
+        - question: This is another question?
+          answer: Codecov provides highly integrated tools to group, merge, archive and compare coverage reports. Whether your team is comparing changes in a pull request or reviewing a single commit, Codecov will improve the code review workflow and quality.
+
+
+    - group: Timing
+      questions:
+        - question: This is a question right here that you can view and see?
+          answer: We will include some copy here that gives an <a href="">introduction</a> to the various options available for sponsorship.
+
+        - question: This is another question?
+          answer: Codecov provides highly integrated tools to group, merge, archive and compare coverage reports. Whether your team is comparing changes in a pull request or reviewing a single commit, Codecov will improve the code review workflow and quality.
+
+        - question: This is a question right here that you can view and see?
+          answer: Proin ipsum est, tempor eget vulputate a, gravida id metus. In id odio tempor purus ultricies mattis. Nam vulputate eros quis congue varius. Morbi vulputate eu velit in bibendum. Suspendisse potenti. Sed convallis, erat vel.
+
+
+    - group: Legal
+      questions:
+        - question: This is a question right here that you can view and see?
+          answer: Proin ipsum est, tempor eget vulputate a, gravida id metus. In id odio tempor purus ultricies mattis. Nam vulputate eros quis congue varius. Morbi vulputate eu velit in bibendum. Suspendisse potenti. Sed convallis, erat vel.
+
+        - question: This is a question right here that you can view and see?
+          answer: We will include some copy here that gives an <a href="">introduction</a> to the various options available for sponsorship.
+
+        - question: This is another question?
+          answer: Codecov provides highly integrated tools to group, merge, archive and compare coverage reports. Whether your team is comparing changes in a pull request or reviewing a single commit, Codecov will improve the code review workflow and quality.

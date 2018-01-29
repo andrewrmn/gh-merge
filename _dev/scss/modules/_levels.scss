@@ -1,0 +1,192 @@
+// ---------------------------------------------------------------------
+//  Levels
+// ---------------------------------------------------------------------
+
+
+.levels {
+
+    @include breakpoint(md) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 1152px;
+        margin: 0 auto;
+
+        .levels__nav {
+            // display: block;
+            // width: 226px;
+            // padding: 16px 12px;
+            // position: sticky;
+            // top: 66px;
+            // /* container: */
+            padding: 16px 12px;
+            background: #FFFFFF;
+            border: 1px solid #E1E4E8;
+            border-radius: 3px;
+        }
+
+        .levels__levels {
+            width: 100%;
+            flex-grow: 1;
+            margin-left: 64px;
+        }
+    }
+}
+
+
+// ----------------------------------------
+// Level
+// ----------------------------------------
+
+.level {
+    /* container: */
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(27,31,35,0.15);
+    border-radius: 3px;
+    padding: 24px 16px;
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint(md) {
+        padding: 36px;
+
+    }
+
+    &:after {
+        content:'';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 5px;
+        width: 100%;
+        background: linear-gradient(90deg, #A965AD 0%, #057FDF 100%);
+    }
+}
+
+
+.level__header {
+
+    @include breakpoint(lg) {
+        display: flex;
+        justify-content: space-between;
+
+        > *:nth-child(2) {
+            white-space: nowrap;
+            padding-left: 20px;
+        }
+    }
+}
+
+.level__summary {
+    p {
+        @include p-sm;
+    }
+}
+
+
+// ----------------------------------------
+// Opportunities
+// ----------------------------------------
+
+.show-details-toggle {
+
+    > span:before {
+        content: 'View ';
+        font-weight: 700;
+        color: $blue-500;
+
+        @include p-sm;
+    }
+
+    figure {
+        transform-origin: center;
+        transition: transform $trans;
+    }
+
+    &.is-active {
+        > span:before {
+            content: 'Hide ';
+        }
+        figure {
+            transform: rotate(180deg);
+        }
+    }
+
+}
+
+.opportunities {
+    display: none;
+}
+
+.opportunity + .opportunity {
+    margin-top: 36px;
+}
+
+.opportunity--sold-out {
+    .opportunity__title {
+        &:after {
+            content: 'Sold Out';
+            font-weight: 700;
+            color: $white;
+            font-size: 12px;
+            display: inline-block;
+            vertical-align: middle;
+            background: $error;
+            padding: 1px 2px;
+            border-radius: 3px;
+            margin-left: 12px;
+        }
+    }
+
+    .opportunity__title span,
+    p,
+    .opportunity__pricing {
+        opacity: 0.5;
+    }
+}
+
+.opportunity p {
+    font-size: 1.4rem;
+    line-height: 1.7124;
+}
+
+.opportunity__pricing {
+
+    display: flex;
+
+
+    > * {
+        display: flex;
+        align-items: center;
+        background: $gray-light;
+        border-radius: 50px;
+        height: 34px;
+        padding: 0 16px;
+
+        p {
+            display: flex;
+            margin-bottom: 0;
+            align-items: center;
+
+            + p {
+                margin-left: 24px;
+            }
+        }
+
+        .p-sm {
+            line-height: 1;
+            margin-right: 6px;
+        }
+
+        .h3 {
+            margin-bottom: 0;
+            font-weight: 500 !important;
+        }
+    }
+}

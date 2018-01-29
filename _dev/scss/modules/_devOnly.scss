@@ -1,0 +1,45 @@
+// ---------------------------------------------------------------------
+//  REMOVE FOR PRODUCTION
+// ---------------------------------------------------------------------
+
+#__bs_notify__ {
+    // opacity: 0.1;
+    // bottom: 0 !important;
+    // top: auto !important;
+    // height: 50px;
+    display: none !important;
+}
+
+body:after {
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    color: white;
+    font-size: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    content: 'Mobile';
+
+    @include stop-at($hb) {
+        right: auto;
+        left: 0;
+    }
+
+    @include breakpoint(sm) {
+        content: 'Small';
+    }
+
+    @include breakpoint(md) {
+        content: 'Medium';
+    }
+
+    @include breakpoint(lg) {
+        content: 'Large';
+    }
+
+    @include breakpoint(xl) {
+        content: 'x-large';
+    }
+}

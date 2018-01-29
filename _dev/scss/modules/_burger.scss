@@ -1,0 +1,80 @@
+// ---------------------------------------------------------------------
+//  Burger Styles
+// ---------------------------------------------------------------------
+
+
+.burger {
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	z-index: 11;
+	border-radius: 10px 0 0 0;
+	transition: opacity $transition;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);
+	background: $white;
+	//border: 1px solid $pink;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	@include breakpoint(md) {
+		display: none !important;
+	}
+}
+
+.burger > * {
+	align-self: center;
+	width: 24px;
+	height: 14px;
+	position: relative;
+	margin: 0 auto;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+
+	> * {
+	   position: absolute;
+	   display: block;
+	   height: 2px;
+	   width: 100%;
+	   background-color: $white;
+	   margin: 0 auto;
+	   transition: all $trans;
+	   -webkit-backface-visibility: hidden;
+   }
+}
+
+.burger > * > *:first-child { top: 0; background: $red; }
+.burger > * > *:nth-child(2) { top: 50%; margin-top: -1px; background: $yellow; }
+.burger > * > *:last-child { bottom: 0; background: $green; }
+
+
+// ----------------------------------------
+// Active Styles
+// ----------------------------------------
+
+.menu-is-open {
+	.burger > * > *:first-child {
+		top: 50%;
+		margin-top: -2px;
+		transform: rotate(45deg);
+	}
+
+	.burger > * > *:nth-child(2) {
+		transform: rotate(-135deg);
+		opacity: 0;
+	}
+
+	.burger > * > *:last-child {
+		bottom: 50%;
+		margin-top: 1px;
+		transform: rotate(-45deg);
+	}
+}

@@ -1,0 +1,40 @@
+// ---------------------------------------------------------------------
+//  @font face
+// ---------------------------------------------------------------------
+
+
+@font-face {
+    font-family: "Relative";
+    src:
+        url("../fonts/relative-10pitch.eot?#iehack") format("eot"),
+        url("../fonts/relative-10pitch.woff2") format("woff2"),
+        url("../fonts/relative-10pitch.woff") format("woff"),
+        url("../fonts/Relative-10pitch.ttf") format("truetype"),
+        url("../fonts/Relative-10pitch.svg#svgFontName") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Relative";
+    src:
+        url("../fonts/relative-medium.eot?#iehack") format("eot"),
+        url("../fonts/relative-medium.woff2") format("woff2"),
+        url("../fonts/relative-medium.woff") format("woff"),
+        url("../fonts/Relative-medium.ttf") format("truetype"),
+        url("../fonts/Relative-medium.svg#svgFontName") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Relative";
+    src:
+        url("../fonts/relative-faux.eot?#iehack") format("eot"),
+        url("../fonts/relative-faux.woff2") format("woff2"),
+        url("../fonts/relative-faux.woff") format("woff"),
+        url("../fonts/Relative-faux.ttf") format("truetype"),
+        url("../fonts/Relative-faux.svg#svgFontName") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

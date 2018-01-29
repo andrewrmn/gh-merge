@@ -1,0 +1,28 @@
+// ---------------------------------------------------------------------
+//  Split Layout
+// ---------------------------------------------------------------------
+
+
+
+.split-layout {
+
+    @include breakpoint(md) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 1152px;
+        margin: 0 auto;
+
+        .split-layout__sidebar {
+            padding: 0 16px;
+        }
+
+        .split-layout__content  {
+            width: 100%;
+            flex-grow: 1;
+            margin-left: 24px;
+            padding-left: 48px;
+            border-left: 1px solid #E1E4E8;
+        }
+    }
+}

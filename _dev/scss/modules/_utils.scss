@@ -1,0 +1,114 @@
+// ---------------------------------------------------------------------
+//  Utility Classes
+// ---------------------------------------------------------------------
+
+.has-accent {
+
+    &:after {
+        content: "";
+        width: 100px;
+        height: 2px;
+        display: block;
+        background: $brand;
+        margin: 20px auto;
+    }
+}
+
+// ----------------------------------------
+// Type Utilities
+// ----------------------------------------
+
+.text-red {
+    color: $red;
+}
+.text-yellow {
+    color: $yellow;
+}
+.text-pink {
+    color: $pink;
+}
+.text-green {
+    color: $green;
+}
+.text-blue {
+    color: $blue;
+}
+.text-purple {
+    color: $purple;
+}
+.text-brand {
+    color: $brand;
+}
+.text-white {
+    color: $white;
+}
+
+
+.text-center {
+    text-align: center;
+
+    p, img, .text-thin {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.text-w-thin {
+    max-width: 560px;
+}
+
+.text-light {
+    color: $gray;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@include breakpoint(md){
+    .text-md-right {
+        text-align: right;
+    }
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-bold,
+.text-500 {
+    font-weight: 500;
+}
+.text-400 {
+    font-weight: 400;
+}
+.text-300 {
+    font-weight: 300;
+}
+
+.text-flush {
+    margin-bottom: 0;
+
+    + * {
+        margin-top: 0;
+    }
+}
+
+.text-lh-1 {
+    line-height: 1;
+}
+
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+.sr-only,
+.screen-reader-text {
+    @include visually-hidden;
+}
+
+.flex-basis-0 {
+    flex-basis: 0;
+    flex-grow: 1;
+}

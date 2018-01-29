@@ -1,0 +1,119 @@
+// ---------------------------------------------------------------------
+//  Pagination Styles
+// ---------------------------------------------------------------------
+
+
+.planets {
+    position: absolute;
+    right: -70px;
+    top: calc(100% - 30px);
+    width: 262px;
+    height: 116px;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+
+    @include stop-at($medium) {
+        width: 160px;
+        transform: rotate(230deg);
+        top: calc(100% - 20px);
+    }
+
+    > * {
+        opacity: 0;
+        transition: transform 1s ease, opacity 0.7s ease;
+        transform-origin: center;
+        transform: scale(0) rotate(-60deg);
+        position: absolute;
+    }
+
+    > *:first-child {
+        transition-delay: 0.3s;
+        left: 0;
+        top: 0;
+        width: 40px;
+
+    }
+    > *:nth-child(2) {
+        transition-delay: 0.4s;
+        right: 0;
+        top: 0;
+        width: 30px;
+    }
+    > *:nth-child(3) {
+        transition-delay: 0.5s;
+        right: 40px;
+        bottom: 0;
+        width: 70px;
+    }
+
+    .in-view & > * {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
+
+
+
+.universe-wrap,
+.planet-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.universe-icons {
+    position: absolute;
+    z-index: -1;
+
+    path {
+        opacity: 0;
+        transition: transform 1s ease;
+        transform-origin: center;
+        transform: scale(0) rotate(-60deg);
+        fill: $gray-200;
+    }
+
+    path:nth-child(1),
+    path:nth-child(5) {
+        transition-delay: 0.2s;
+    }
+
+    path:nth-child(2),
+    path:nth-child(4),
+    path:nth-child(8) {
+        transition-delay: 0.4s;
+    }
+
+    .in-view & path {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
+
+.universe-1 {
+    top: 10px;
+    left: 10px;
+    max-width: 46px;
+
+    @include breakpoint(md) {
+
+    }
+}
+.universe-2 {
+    max-width: 51px;
+    top: 40px;
+    right: 10px;
+
+    @include breakpoint(md) {
+        top: 20px;
+    }
+}
+.universe-3 {
+    max-width: 204px;
+    bottom: -20px;
+    right: -10px;
+
+    @include breakpoint(md) {
+        right: -60px;
+    }
+}

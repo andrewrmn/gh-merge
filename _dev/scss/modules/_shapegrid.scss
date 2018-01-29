@@ -1,0 +1,86 @@
+// ---------------------------------------------------------------------
+//  Svg Grids
+// ---------------------------------------------------------------------
+
+$squre-width: 64px;
+$squre-height: 64px;
+
+.shape-grid {
+    display: grid;
+    grid-template-columns: $squre-width $squre-width $squre-width;
+    grid-template-rows: $squre-width $squre-width $squre-width;
+    opacity: 0;
+    transition: opacity $trans;
+
+     &.in-view {
+        opacity: 1;
+    }
+	> * {
+		margin: 4px;
+		overflow: hidden;
+	}
+
+    .spacer {
+        //background: $gray;
+    }
+
+	.two-rows {
+		grid-row-end: span 2;
+	//	background: red;
+	}
+
+	.three-cols {
+		grid-column-end: span 3;
+	}
+}
+
+
+.shape-grid--2x3 {
+	grid-template-columns: $squre-width $squre-width;
+}
+
+.shape-grid-4-3 {
+	grid-template-columns: $squre-width $squre-width $squre-width $squre-width $squre-width;
+}
+
+
+@include stop-at($large) {
+    #home {
+        position: relative;
+        z-index: 1;
+
+        .shape-grid {
+            position: absolute;
+            right: 0;
+            top: 0;
+            opacity: 0.2;
+            z-index: -1;
+        }
+    }
+
+    #about {
+        position: relative;
+        z-index: 1;
+
+        .shape-grid {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.2;
+            z-index: -1;
+        }
+    }
+
+    #speaker {
+        position: relative;
+        z-index: 1;
+
+        .shape-grid {
+            position: absolute;
+            right: 0;
+            top: 0;
+            opacity: 0.2;
+            z-index: -1;
+        }
+    }
+}

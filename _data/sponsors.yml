@@ -1,0 +1,219 @@
+- name: IBM
+  logo: ibm.png
+  url: https://www.ibm.com
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: compose
+  logo: compose.svg
+  url: https://www.compose.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: heroku
+  logo: heroku.svg
+  url: https://www.heroku.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: travisCi
+  logo: TravisCI.svg
+  url: https://travis-ci.org/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: waffle
+  logo: waffle-full.png
+  url: https://waffle.io/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: circle ci
+  logo: circle-ci.png
+  url: https://circleci.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: Axosoft
+  logo: Axosoft.svg
+  url: https://www.gitkraken.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: Mozilla
+  logo: mozilla.png
+  url: https://www.mozilla.org/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: AWS
+  logo: AWS.svg
+  url: https://aws.amazon.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: BlackDuck
+  logo: BlackDuck.svg
+  url: https://www.blackducksoftware.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: codeship
+  logo: codeship.svg
+  url: https://codeship.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: Sticker Mule
+  logo: sticker-mule.png
+  url: https://www.stickermule.com/uses/laptop-stickers
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: Digital Ocean
+  logo: Digital-Ocean.svg
+  url: https://www.digitalocean.com
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: ZenHub
+  logo: zenhub.png
+  url: https://www.zenhub.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: f5
+  logo: f5.png
+  url: https://f5.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: Code With Target
+  logo: target.svg
+  url: https://www.codewithtarget.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: Rocro
+  logo: rocro.svg
+  url: https://rocro.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: CA Technologies
+  logo: CA.png
+  url: https://www.ca.com/us.html
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: Mailchimp
+  logo: mailchimp.png
+  url: https://mailchimp.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: SAP
+  logo: SAP.png
+  url: https://www.sap.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: Sentry
+  logo: Sentry.png
+  url: https://sentry.io/welcome/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe
+
+- name: Stackoverflow
+  logo: stackoverflow.png
+  url: https://stackoverflow.com/
+  events:
+    - id: gitmerge
+    - id: constellation
+    - id: electronconf
+    - id: satellite
+    - id: universe

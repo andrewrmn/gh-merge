@@ -1,0 +1,101 @@
+// ---------------------------------------------------------------------
+//  Event Preview Styles
+// ---------------------------------------------------------------------
+
+.event-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    > * {
+        width: 100%;
+        margin-bottom: 32px;
+
+        @include breakpoint(md) {
+            width: calc(50% - 8px);
+        }
+
+        @include breakpoint(lg) {
+            width: calc(50% - 16px);
+
+        }
+    }
+}
+
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+.event-preview {
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 1px solid #E1E4E8;
+    box-shadow: 0 1px 4px 0 rgba(27,31,35,0.15);
+    border-radius: 6px;
+
+    .bg-image {
+        position: relative;
+        height: 280px;
+        background: $almost-black;
+
+        img {
+            transition-delay: 0.2s;
+        }
+    }
+}
+
+.event-preview__content {
+    padding: 16px;
+
+    @include breakpoint(lg) {
+        padding: 24px 32px;
+    }
+}
+
+.event-preview__details {
+
+    @include breakpoint(lg) {
+        display: flex;
+        align-items: center;
+
+        > * {
+            margin-right: 24px;
+        }
+    }
+
+    > * {
+        display: flex;
+        align-items: center;
+
+        &:before {
+            content: '';
+            display: block;
+            margin-right: 6px;
+            height: 14px;
+        }
+    }
+}
+
+.event-preview__location {
+
+    &:before {
+        width: 11px;
+        background: url('../images/svgs/location-pin.svg') center / cover no-repeat;
+    }
+}
+.event-preview__date {
+
+    &:before {
+        width: 13px;
+        background: url('../images/svgs/calendar.svg') center / cover no-repeat;
+    }
+}
+.event-preview__capacity {
+
+    &:before {
+        width: 12px;
+        background: url('../images/svgs/person.svg') center / cover no-repeat;
+    }
+}

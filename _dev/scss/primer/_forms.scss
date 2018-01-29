@@ -1,0 +1,52 @@
+// ---------------------------------------------------------------------
+//  Form Styles (Gravity Forms)
+// ---------------------------------------------------------------------
+
+form {
+    background: #FFFFFF;
+    border: 1px solid #E1E4E8;
+    box-shadow: 0 2px 4px 0 rgba(27,31,35,0.10);
+    border-radius: 6px;
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 16px;
+
+    @include breakpoint(md){
+        padding: 36px;
+    }
+}
+
+
+// ----------------------------------------
+// Form Group
+// ----------------------------------------
+
+.form-group .form-control {
+    width: 100%;
+}
+
+.form-group textarea.form-control {
+    height: 136px;
+    min-height: 136px;
+}
+
+// ----------------------------------------
+// Labels
+// ----------------------------------------
+
+label {
+    font-size: 14px;
+    margin-bottom: 2px;
+    display: inline-block;
+
+    &.sr-only {
+        position: absolute;
+    }
+}
+
+.label-checkbox {
+    font-weight: normal;
+    color: $gray-500;
+    margin-bottom: 0;
+}

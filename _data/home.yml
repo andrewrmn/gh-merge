@@ -1,0 +1,90 @@
+- headline: Sponsor a GitHub Event
+  subHeadline: GitHub events bring together thousands of leading software developers and companies from around the world to solve today’s biggest challenges. As a sponsor, you select the sponsorship level that fits your goals, and we set you up with everything you need to get your message in front of the right people at the right time.
+  ctaText: Why Sponsor
+  ctaLink: /why-sponsor/
+  cta2Text:
+  cta2Link:
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  featuredImg: events/GitHub-Events-background-medley.jpg
+  featuredImgDesc: GitHub Events design medley
+
+
+  # Section one
+  sectionOneHeadline: Events done differently
+  sectionOneContent: |
+    <p>Forget the typical tradeshow booths and flyers. From interactive AR installations to 30-foot balloon sculptures, GitHub events make experiences with wow factor come alive for developers around the world. We work with sponsors, vendors, and artists to create an environment that inspires and delights developers. The bolder, the&nbsp;better.</p>
+    <p>With the most engaged software community in the world on our platform, you can count on meaningful interactions with developers who care.</p>
+  sectionOneText: Learn more about our events
+  sectionOneLink: /events/
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  sectionOneImg: marketing/GitHub-Universe-Octopus.svg
+  sectionOneImgDesc: GitHub Universe Octopus Display
+
+  # Include path starting from the image folder i.e. marketing/GitHub-Image-Collage.jpg
+  gallery:
+    #  4 images per slide
+    - slide: 1
+      images:
+      - image: marketing/home/home-block-1-1.jpg
+        alt: I love open-source
+      - image: marketing/home/home-block-2-1.jpg
+        alt: interactive peg-board
+      - image: marketing/home/home-block-3-1.jpg
+        alt: CircleCi Lounge
+      - image: marketing/home/home-block-4-1.jpg
+        alt: Octocat Universe blow-up
+    - slide: 2
+      images:
+      - image: marketing/home/home-block-1-2.jpg
+        alt: Modus Create tent
+      - image: marketing/home/home-block-2-2.jpg
+        alt: Food Spread
+      - image: marketing/home/home-block-3-2.jpg
+        alt: Octopus Bench
+      - image: marketing/home/home-block-4-2.jpg
+        alt: Chris Wanstrath Speaking at Universe
+    - slide: 3
+      images:
+      - image: marketing/home/home-block-1-3.jpg
+        alt: Git Lab Ping-pong
+      - image: marketing/home/home-block-2-3.jpg
+        alt: Guests interacting
+      - image: marketing/home/home-block-3-3.jpg
+        alt: VR fun
+      - image: marketing/home/home-block-4-3.jpg
+        alt: Universe demo
+
+  howItWorksHeadline: How sponsorship works
+  howItWorksDesc: Let’s give your brand the presence it deserves.
+
+  # Blocks
+  block1Headline: Select an Event
+  block1Content: We host software community events of all sizes, all over the world. Whether you want to reach developers in Canada or entrepreneurs in Australia, we’ve got you covered.
+
+  block2Headline: Plan an Activation
+  block2Content: From including your logo in event emails to designing your dream demo lounge, we’ll work with you to choose the event experience that fits your goals and bring it to life.
+
+  block3Headline: Build a Following
+  block3Content: The GitHub community attends our events to explore new tools. Sponsorship is the best way to make sure your product is part of their journey—and build connections you can count on.
+
+
+
+  testimonial1Author: Aaron Upright
+  testimonial1AuthorTitle: Co-founder, ZenHub
+  testimonial1: We like getting leads, but we care a lot more about having quality conversations. The developers we meet as sponsors are genuinely interested in a two-way conversation about our products, so we end up getting so much more out of GitHub events than your typical conferences.
+  testimonial1Image: /sponsors/zenhub.png
+  companyImage: true
+
+  testimonial2Author: Chad Williams
+  testimonial2AuthorTitle: Cloud Marketing Manager, IBM
+  testimonial2: GitHub worked with us to build the perfect experience to showcase IBM and our products at Universe. We had all the services we needed to attract hundreds of people to our lounge, and every person who stopped by was the type of software professional we wanted to meet. You don’t get that at any other event.
+  testimonial2Image: /sponsors/ibm.png
+  companyImage: true
+
+
+  ctaHeadline: Let’s bring your brand into the spotlight.
+  ctaContent:
+  ctaLinkText: Contact Us
+  ctaLinkUrl: /contact/
+  ctaLinkText2:
+  ctaLinkUrl2:

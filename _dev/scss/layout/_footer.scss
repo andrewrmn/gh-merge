@@ -1,0 +1,95 @@
+// ---------------------------------------------------------------------
+//  Site Footer Styles
+// ---------------------------------------------------------------------
+
+.site-footer {
+    background: $almost-black;
+
+
+    p, a {
+        font-size: 14px;
+        color: $white;
+    }
+
+    .container-wide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 36px 16px;
+
+        @include breakpoint(lg){
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 0 16px;
+            height: 118px;
+        }
+    }
+
+    img {
+        width: 32px;
+    }
+
+    ul {
+        text-align: center;
+
+        li + li {
+            margin-top: 12px;
+        }
+
+        @include breakpoint(lg){
+            display: flex;
+            align-items: baseline;
+            order: 2;
+            justify-content: flex-end;
+
+            li + li {
+                margin-top: 0;
+                margin-left: 24px;
+            }
+        }
+
+    }
+
+    ul a {
+        letter-spacing: 0;
+        transition: color $trans;
+
+        &:hover {
+            color: $blue-500;
+        }
+    }
+}
+
+.site-footer__legal {
+    width: 100%;
+    order: 2;
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    img {
+        display: block;
+        margin: 0 auto 8px;
+    }
+
+    p {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    @include breakpoint(lg){
+        width: auto;
+        order: 1;
+        margin-top: 0;
+        flex-wrap: nowrap;
+
+        img {
+            margin: 0 16px 0 0;
+        }
+    }
+}
