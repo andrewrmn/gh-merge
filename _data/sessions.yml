@@ -1,0 +1,74 @@
+- time: 9:00
+  day: 1
+  talk: Registration ✏️ & Breakfast 🥣
+
+- time: 10:00
+  day: 1
+  talk: Welcome & Opening Keynote
+  speakers:
+    - name: Lionel Messi
+      title: Right Wing/ Forward
+      company: Barcelona FC
+      image: leo-messi.jpg
+      twitter: leomessi
+      bio: Lionel "Leo" Messi is an Argentine professional footballer who plays as a forward for Spanish club Barcelona and the Argentina national team. Often considered the best player in the world and regarded by many as the greatest of all time, Messi has a record-tying five Ballon d'Or awards, four of which he won consecutively, and a record-tying four European Golden Shoes.
+
+- time: 10:30
+  day: 1
+  talk: Linux Kernel Development - Going Faster Than You Think
+  speakers:
+    - name: Cristiano Ronaldo
+      title: Left Wing/ Attacker
+      company: Real Madrid C.F.
+      image: cristiano-ronaldo.jpg
+      twitter: Cristiano
+      bio: Cristiano Ronaldo is a Portuguese professional footballer who plays as a forward for Spanish club Real Madrid and the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest of all time, Ronaldo has five Ballon d'Or awards, the most for a European player and is tied for most all-time. He is the first player in history to win four European Golden Shoes. He has won 25 trophies in his career, including five league titles, four UEFA Champions League titles and one UEFA European Championship. A prolific goalscorer, Ronaldo holds the records for most official goals scored in the top five European leagues (377), the UEFA Champions League (114), the UEFA European Championship (29) and the FIFA Club World Cup (7), as well as most goals scored in a UEFA Champions League season (17). He has scored more than 600 senior career goals for club and country.
+
+    - name: Antoine Griezmann
+      title: Striker/ Forward
+      company: Atlético Madrid
+      image: antoine-griezmann.jpg
+      twitter: AntoGriezmann
+      bio: |
+        Antoine Griezmann is a French professional footballer who plays as a forward for Spanish club Atlético Madrid and the French national team.
+
+        He began his career at Real Sociedad, making his debut in 2009 and winning the Segunda División title in his first season. Across five seasons there, he scored 52 goals in 201 official matches. In 2014, he transferred to Atlético Madrid for €30 million. For his performances throughout 2016, he was shortlisted for the Ballon d'Or 2016 Award in which he finished in third place.
+
+
+
+
+- time: 9:00
+  day: 2
+  talk: Registration ✏️ & Breakfast 🥣
+
+- time: 10:00
+  day: 2
+  talk: Welcome & Opening Keynote
+  speakers:
+    - name: Lionel Messi
+      title: Right Wing/ Forward
+      company: Barcelona FC
+      image: leo-messi.jpg
+      twitter: leomessi
+      bio: Lionel "Leo" Messi is an Argentine professional footballer who plays as a forward for Spanish club Barcelona and the Argentina national team. Often considered the best player in the world and regarded by many as the greatest of all time, Messi has a record-tying five Ballon d'Or awards, four of which he won consecutively, and a record-tying four European Golden Shoes.
+
+- time: 10:30
+  day: 2
+  talk: Linux Kernel Development - Going Faster Than You Think
+  speakers:
+    - name: Cristiano Ronaldo
+      title: Left Wing/ Attacker
+      company: Real Madrid C.F.
+      image: cristiano-ronaldo.jpg
+      twitter: Cristiano
+      bio: Cristiano Ronaldo is a Portuguese professional footballer who plays as a forward for Spanish club Real Madrid and the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest of all time, Ronaldo has five Ballon d'Or awards, the most for a European player and is tied for most all-time. He is the first player in history to win four European Golden Shoes. He has won 25 trophies in his career, including five league titles, four UEFA Champions League titles and one UEFA European Championship. A prolific goalscorer, Ronaldo holds the records for most official goals scored in the top five European leagues (377), the UEFA Champions League (114), the UEFA European Championship (29) and the FIFA Club World Cup (7), as well as most goals scored in a UEFA Champions League season (17). He has scored more than 600 senior career goals for club and country.
+
+    - name: Antoine Griezmann
+      title: Striker/ Forward
+      company: Atlético Madrid
+      image: antoine-griezmann.jpg
+      twitter: AntoGriezmann
+      bio: |
+        Antoine Griezmann is a French professional footballer who plays as a forward for Spanish club Atlético Madrid and the French national team.
+
+        He began his career at Real Sociedad, making his debut in 2009 and winning the Segunda División title in his first season. Across five seasons there, he scored 52 goals in 201 official matches. In 2014, he transferred to Atlético Madrid for €30 million. For his performances throughout 2016, he was shortlisted for the Ballon d'Or 2016 Award in which he finished in third place.

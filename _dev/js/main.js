@@ -19,6 +19,11 @@ var andrewrossco = andrewrossco || {};
         APP.Sections.init();
 
         APP.Lines.init();
+
+
+        APP.Modal.init();
+
+        APP.Tabs.init();
     });
 
 // ---------------------------------------------------------------------
@@ -274,18 +279,17 @@ APP.Lines = {
 				par = el.parents('.shape-grid'),
 				active = false,
                 element = el.prop('tagName'),
-                delay = 1;
+                delay = 0.4;
 
             if( !el[0].hasAttribute('stroke-width') ) {
                 TweenLite.to(el, 0, {alpha:0});
             }
 
-
 			function checksvg() {
 				if(par.hasClass('in-view')){
 					if(active == false){
                         if(element == 'circle'){
-                            delay = 2;
+                            delay = 1.6;
                         }
                         TweenLite.to(el, 1.6, {drawSVG:"100%", alpha:1}).delay(delay);
 						active = true;
@@ -314,8 +318,6 @@ APP.Lines = {
 };
 
 
-
-
 // ---------------------------------------------------------------------
 // Scroll to
 // Used for smooth scrolling to elements
@@ -324,14 +326,6 @@ APP.Lines = {
 APP.ScrollTo = {
 
     init: function() {
-        if( $('*[data-scroll-to]').length ) {
-            this.bind();
-        } else {
-            return;
-        }
-    },
-
-    bind: function() {
 
         $('*[data-scroll-to]').on('click touchstart:not(touchmove)', function() {
 
@@ -339,6 +333,9 @@ APP.ScrollTo = {
                 target = $("#" + trigger),
                 ss = 1000, //scroll speed
                 o = 0; // offset
+
+            $('body').removeClass('menu-is-open');
+
 
             if( $(this).attr('data-scroll-speed') ) {
                 ss = $(this).attr('data-scroll-speed');
@@ -353,6 +350,162 @@ APP.ScrollTo = {
             }, ss);
         });
 
+    }
+};
+
+
+// ---------------------------------------------------------------------
+// Modal
+// ---------------------------------------------------------------------
+
+APP.Modal = {
+
+    init: function() {
+
+        var trigger = $('.open-speaker-modal'),
+            modal = $('#speaker-modal'),
+            modalSidebar = $('.modal__sidebar'),
+            modalBody = $('.modal__body > *'),
+            modalImg = $('.modal__img'),
+            b = $('body'),
+            shapes = $('.js-shuffle-children');
+
+        function shuffleChildren(el){
+          var p = el,
+              kids = el.children();
+
+          kids.sort(function() {
+            return 0.5 - Math.random();
+          });
+
+          el.empty();
+          kids.appendTo(el);
+        }
+
+        function getSpeakerModal(el){
+            var speaker = el,
+                color = speaker.find('.speaker__info-border').css('background'),
+                img = speaker.find('.speaker__image-wrap').clone(),
+                info = speaker.find('.speaker__info').clone(),
+                modalInfo = speaker.find('.speaker__modal-content').clone();
+
+            modalImg.append(img);
+            modalSidebar.css('background', color);
+
+            modalBody.append(info);
+            modalBody.append(modalInfo);
+
+            modal.addClass('is-active');
+            b.addClass('modal-is-open');
+
+            shuffleChildren(shapes);
+
+            setTimeout(function(){
+                $(window).trigger('resize');
+            }, 600);
+        }
+
+
+        trigger.click(function(e){
+            e.preventDefault();
+
+            var el = $(this),
+                speakerId = el.attr('href'),
+                speaker = $('#' + speakerId),
+                //speaker = el.parent('.speaker'),
+                link = speaker.attr('ID');
+
+            history.replaceState(null, '', '#' + link);
+
+            getSpeakerModal(speaker);
+        });
+
+
+        // Check for open modal on load
+        $(document).ready(function(){
+            var hash = window.location.hash.replace('#', ''),
+                aLink = $('.open-modal-sched');
+
+            $('.speaker').each(function(){
+                var el = $(this),
+                    modalId = el.attr('ID');
+
+                if( modalId === hash && modalId != '' ) {
+                    getSpeakerModal(el);
+                    modal.addClass('is-active');
+                    b.addClass('modal-is-open');
+                }
+            });
+
+            aLink.each(function(){
+                var el = $(this),
+                    speakerId = el.attr('href'),
+                    speaker = $('#' + speakerId),
+                    color = speaker.find('.speaker__info-border').css('background-color');
+
+                el.css('color', color);
+
+                el.mouseover(function() {
+                    el.removeClass('text-white');
+                });
+                el.mouseout(function() {
+                    el.addClass('text-white');
+                });
+            });
+
+
+        });
+
+
+        // Close Modal
+        $('.modal__close').click(function(e){
+            e.preventDefault();
+
+            modal.removeClass('is-active');
+            modalImg.empty();
+            modalBody.empty();
+            b.removeClass('modal-is-open');
+            history.replaceState(null, '', ' ');
+            shapes.removeClass('in-view');
+
+            setTimeout(function(){
+                $(window).trigger('resize');
+            }, 600);
+        });
+    }
+};
+
+
+// ---------------------------------------------------------------------
+// Tabs
+// ---------------------------------------------------------------------
+
+APP.Tabs = {
+
+    init: function() {
+
+        var tab = $('.tabs__tab'),
+			tabBody = $('.tabs__content');
+
+		tab.click(function(e){
+			e.preventDefault();
+			var group = $(this).parents('.tabs'),
+				tabs = group.find('.tabs__tab'),
+				tabsBody = group.find('.tabs__content');
+
+			tabs.removeClass('selected');
+			tabsBody.hide();
+
+			$(this).addClass('selected');
+
+			var tabId = $(this).attr('href'),
+				target = $(tabId),
+				graphs = target.find('*[data-detect-viewport]');
+
+			target.fadeIn(300);
+            $(window).trigger('resize');
+
+		});
 
     }
 };

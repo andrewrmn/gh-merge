@@ -20,20 +20,18 @@ $squre-height: 64px;
 		overflow: hidden;
 	}
 
-    .spacer {
-        //background: $gray;
-    }
-
 	.two-rows {
 		grid-row-end: span 2;
-	//	background: red;
 	}
 
 	.three-cols {
 		grid-column-end: span 3;
 	}
-}
 
+    &.shape-grid--single {
+        display: block;
+    }
+}
 
 .shape-grid--2x3 {
 	grid-template-columns: $squre-width $squre-width;
@@ -43,44 +41,17 @@ $squre-height: 64px;
 	grid-template-columns: $squre-width $squre-width $squre-width $squre-width $squre-width;
 }
 
+.shape-grid--2x1 {
+    grid-template-columns: $squre-width $squre-width;
+    grid-template-rows: $squre-width;
+}
 
-@include stop-at($large) {
-    #home {
-        position: relative;
-        z-index: 1;
+.shape-grid-4-2 {
+	grid-template-columns: $squre-width $squre-width $squre-width $squre-width;
+    grid-template-rows: $squre-width $squre-width;
+}
 
-        .shape-grid {
-            position: absolute;
-            right: 0;
-            top: 0;
-            opacity: 0.2;
-            z-index: -1;
-        }
-    }
-
-    #about {
-        position: relative;
-        z-index: 1;
-
-        .shape-grid {
-            position: absolute;
-            left: 0;
-            top: 0;
-            opacity: 0.2;
-            z-index: -1;
-        }
-    }
-
-    #speaker {
-        position: relative;
-        z-index: 1;
-
-        .shape-grid {
-            position: absolute;
-            right: 0;
-            top: 0;
-            opacity: 0.2;
-            z-index: -1;
-        }
-    }
+.shape-grid--3x1 {
+    grid-template-columns: $squre-width $squre-width $squre-width;
+    grid-template-rows: $squre-width;
 }

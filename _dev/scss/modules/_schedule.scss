@@ -1,0 +1,157 @@
+// ---------------------------------------------------------------------
+//  Schedule Styles
+// ---------------------------------------------------------------------
+
+
+.schedule {
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+
+    @include breakpoint(md) {
+        margin-top: 120px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 156px;
+    }
+}
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+.schedule__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    a {
+        display: block;
+        max-width: 50%;
+        text-align: center;
+        padding: 20px;
+        color: $gray;
+
+        @include breakpoint(lg) {
+            .h3 {
+                font-size: 28px;
+            }
+        }
+
+        @include stop-at($small) {
+            .link {
+                font-size: 10px;
+            }
+        }
+
+        &:after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background: $blue;
+            display: block;
+            transition: transform $trans;
+            transform-origin: right;
+            transform: scaleX(0);
+        }
+
+        &.selected,
+        &:hover {
+            color: $white;
+
+            &:after {
+                transform: scaleX(1);
+
+            }
+        }
+    }
+
+    > a:last-child:after {
+        background: $red;
+        transform-origin: left;
+    }
+}
+
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__content:first-of-type {
+    display: block;
+}
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+.time-slot {
+    margin-bottom: 24px;
+
+    @include start-at($medium) {
+        display: flex;
+        margin-bottom: 16px;
+    }
+}
+
+.time-slot__time {
+    width: 100%;
+    color: $gray;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: $gray-dark;
+        margin-left: 8px;
+    }
+
+    @include start-at($medium) {
+        flex-direction: column;
+        margin-bottom: 0;
+        width: 100px;
+
+        &:after {
+            width: 1px;
+            height: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+.time-slot__talk {
+    position: relative;
+    background: $almost-black;
+    padding: 24px 16px;
+    border-left: 8px solid $gray;
+
+    .h3 {
+        margin-bottom: 8px;
+    }
+
+    @include start-at($medium) {
+        padding: 24px;
+        flex-grow: 1;
+    }
+
+    a {
+        display: block;
+        transition: color $trans;
+
+        &.text-white {
+            color: $white !important;
+        }
+    }
+
+    &.is-break {
+        border-color: $gray-dark;
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Full-Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-932.000000, -7142.000000)">
+        <g id="6---Sponsors" transform="translate(0.000000, 6939.000000)" fill="#FF6C81">
+            <g id="Button-Link" transform="translate(714.000000, 203.000000)">
+                <g id="arrow" transform="translate(230.000000, 10.000000) rotate(-90.000000) translate(-230.000000, -10.000000) translate(220.000000, -2.000000)">
+                    <ellipse id="Oval-2" cx="10" cy="5.45454545" rx="1.11111111" ry="1.09090909"></ellipse>
+                    <ellipse id="Oval-2" cx="10" cy="1.09090909" rx="1.11111111" ry="1.09090909"></ellipse>
+                    <ellipse id="Oval-2" cx="10" cy="9.81818182" rx="1.11111111" ry="1.09090909"></ellipse>
+                    <ellipse id="Oval-2" cx="1.11111111" cy="14.1818182" rx="1.11111111" ry="1.09090909"></ellipse>
+                    <ellipse id="Oval-2" cx="10" cy="14.1818182" rx="1.11111111" ry="1.09090909"></ellipse>
+                    <ellipse id="Oval-2" cx="18.8888889" cy="14.1818182" rx="1.11111111" ry="1.09090909"></ellipse>
+                    <ellipse id="Oval-2" cx="5.55555556" cy="18.5454545" rx="1.11111111" ry="1.09090909"></ellipse>
+                    <ellipse id="Oval-2" cx="10" cy="18.5454545" rx="1.11111111" ry="1.09090909"></ellipse>
+                    <ellipse id="Oval-2" cx="14.4444444" cy="18.5454545" rx="1.11111111" ry="1.09090909"></ellipse>
+                    <ellipse id="Oval-2" cx="10" cy="22.9090909" rx="1.11111111" ry="1.09090909"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

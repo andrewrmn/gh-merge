@@ -24,44 +24,23 @@
 // ----------------------------------------
 @import "primer/_containers";
 @import "layout/_header";
-@import "primer/_nav";
+@import "layout/_pageSection";
 
 
 // ----------------------------------------
 // Modules
 // ----------------------------------------
 @import "modules/_animateIn";
-
-//@import "modules/_blob";
-
 @import "modules/_burger";
 @import "modules/_shapegrid";
-
-// @import "modules/_cards";
-// @import "modules/_media";
-// @import "modules/_lists";
-// @import "modules/_tables";
-// @import "modules/_blocks";
-// @import "modules/_universe";
-// @import "modules/_levels";
-// @import "modules/_demographics";
-//
-// @import "modules/_eventPreview";
-// @import "modules/_carousel";
-//import "modules/_photoswipe";
-
+@import "modules/_speakers";
+@import "modules/_schedule";
+@import "modules/_faqs";
+@import "modules/_lists";
 @import "layout/_footer";
-
-// @import "layout/_splitLayout";
-// @import "primer/_forms";
-// @import "primer/_colors";
-// @import "primer/_subnav";
-// @import "primer/_blankslate";
+@import "modules/_modal";
 @import "primer/_layout";
-
 @import "modules/_utils";
-
-
 
 
 // ----------------------------------------

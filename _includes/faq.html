@@ -1,0 +1,43 @@
+<section id="faq" class="container-full page-section js-page-section">
+    <div class="container page-section__inner">
+        <header class="pb-3">
+            <span class="page-section__hd">FAQ</span>
+            <h2 class="h2">FAQ</h2>
+            {% include patterns/pattern-faq.html %}
+        </header>
+
+        <div class="faqs tabs d-md-flex">
+            <nav class="faq__nav col-lg-4">
+                {% for faq in site.data.faqs %}
+                <a href="#{{ faq.group | slugify }}" class="tabs__tab subnav-item {% if forloop.index == 1 %}selected{% endif %}">
+                    {{ faq.group }}
+                </a>
+                {% endfor %}
+            </nav>
+
+            <div class="faq-content col-lg-8 pt-4 pt-lg-0">
+                {% for faq in site.data.faqs %}
+                <div class="tabs__content" id="{{ faq.group | slugify }}">
+                    <h3 class="link pb-4">{{ faq.group }}</h3>
+                    <div>
+                        <dl class="dl">
+                            {% for question in faq.questions %}
+                            <dt class="h3 pb-1">{{ question.question }}</dt>
+                            <dd class="mb-5">{{ question.answer }}</dd>
+                            {% endfor %}
+                        </dl>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="tabs__content" id="venue">
+                    Venue Quesitons
+                </div>
+
+                <div class="tabs__content" id="help-desk">
+                    Help Desk
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

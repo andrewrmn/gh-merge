@@ -115,6 +115,13 @@ $btn-height: 44px;
             transform: translateX(102%);
         }
     }
+}
 
-
+.arrow-link--light {
+    &:before {
+        background: url('../images/svgs/arrow-right-pink.svg') center / cover no-repeat;
+    }
+    &:after {
+        background: $white;
+    }
 }

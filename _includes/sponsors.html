@@ -1,0 +1,31 @@
+
+
+<section id="sponsors" class="container-full bg-white page-section js-page-section">
+    <div class="page-section__inner container">
+        <header class="pb-7">
+            <span class="page-section__hd">Sponsors</span>
+
+            <div class="sponsor-hd d-md-flex flex-justify-between flex-items-center">
+                <h2 class="h2 text-black pb-4 pb-md-0 ">Sponsors</h2>
+                <a class="arrow-link arrow-link--light text-pink" href="">Become a sponsor</a>
+
+                {% include patterns/pattern-sponsors.html %}
+            </div>
+
+
+        </header>
+
+        <div>
+            <ul class="logo-list" data-animate-in="fade">
+                {% for sponsor in site.data.sponsors %}
+                <li>
+                  <a href="{{ sponsor.url }}" target="_blank">
+                    <img src="/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" />
+                  </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</section>

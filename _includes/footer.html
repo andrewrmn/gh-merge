@@ -1,11 +1,18 @@
 
 <footer class="site-footer" role="contentinfo">
     <div class="container-wide">
-        <div class="site-footer__legal">
-            <a href="">
-                <!-- <img src="/assets/images/GitHub-logomark-white.svg" alt="GitHub Logo" /> -->
+        <div class="site-footer__brand">
+            <a class="site-footer__logo" href="/">
+                <img src="/assets/images/GitMerge-2018-Logo.svg" alt="GitMerge Logo" />
             </a>
-            <p>©<script>document.write(new Date().getFullYear())</script> GitHub, Inc. All Rights Reserved.</p>
+            {% include patterns/pattern-footer.html %}
+        </div>
+
+        <div class="site-footer__form">
+            <form>
+                <input type="email" value="" />
+                <button type="submit"><span class="sr-only">Submit</span></button>
+            </form>
         </div>
 
         <ul>

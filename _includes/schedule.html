@@ -1,0 +1,60 @@
+<div class="schedule tabs">
+    <nav class="schedule__nav" aria-label="schedule tabs">
+        <a href="#schedule-day-1" class="tabs__tab subnav-item selected" aria-current="page">
+            <p class="link">Workshops</p>
+            <span class="h3">March 07</span>
+        </a>
+        <a href="#schedule-day-2" class="tabs__tab subnav-item">
+            <p class="link">Main Event</p>
+            <span class="h3">March 08</span>
+        </a>
+    </nav>
+
+    <div class="tabs__content" id="schedule-day-1">
+        {% for session in site.data.sessions %}
+            {% if session.day == 1 %}
+            <div class="time-slot" data-animate-in="up">
+                <p class="time-slot__time">{{ session.time| }}</p>
+
+                {% if session.speakers|length %}
+                    <div class="time-slot__talk">
+                        <h3 class="h3">{{ session.talk }}</h3>
+                        {% for speaker in session.speakers %}
+                            {% assign speakerId = speaker.name|downcase| replace({'&': 'and'}) | slugify %}
+                            <a class="p open-speaker-modal open-modal-sched text-white" href="{{ speakerId }}">{{ speaker.name }}, {{ speaker.company }}</a>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="time-slot__talk is-break">
+                        <p class="text-bold">Registration ✏️ & Breakfast 🥣 </p>
+                    </div>
+                {% endif %}
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="tabs__content" id="schedule-day-2">
+        {% for session in site.data.sessions %}
+            {% if session.day == 2 %}
+            <div class="time-slot" data-animate-in="up">
+                <p class="time-slot__time">{{ session.time| }}</p>
+
+                {% if session.speakers|length %}
+                    <div class="time-slot__talk">
+                        <h3 class="h3">{{ session.talk }}</h3>
+                        {% for speaker in session.speakers %}
+                            {% assign speakerId = speaker.name|downcase| replace({'&': 'and'}) | slugify %}
+                            <a class="p open-speaker-modal open-modal-sched text-white" href="{{ speakerId }}">{{ speaker.name }}, {{ speaker.company }}</a>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="time-slot__talk is-break">
+                        <p class="text-bold">Registration ✏️ & Breakfast 🥣 </p>
+                    </div>
+                {% endif %}
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

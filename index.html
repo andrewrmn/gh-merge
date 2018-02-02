@@ -4,7 +4,7 @@ title: Home
 id: home
 ---
 
-<section id="home" class="container-full js-page-section">
+<section id="home" class="container-full page-section js-page-section">
     <div class="container pt-sm-4 pt-lg-6 pl-3 pr-3 pb-9">
 
         <div class="d-lg-flex">
@@ -18,7 +18,7 @@ id: home
                     <div>
                         <a class="arrow-link text-pink" href="">Get your ticket</a>
                         <p class="mt-3 text-flush text-300">March 07 – workshops (add-on to your ticket)</p>
-                        <p class=" text-300">March 08 – main conference</p>
+                        <p class="text-300">March 08 – main conference</p>
                     </div>
 
                     <div class="d-flex flex-items-center flex-justify-end col-sm-6 col-lg-4 pt-4">
@@ -27,7 +27,27 @@ id: home
                             <p class="p-lg">Convent Dels Àngels at the MACBA</p>
                         </div>
                         <div class="d-none d-md-block">
-                            <img width="64px" src="/assets/images/squares/schedule-top-right.svg" alt="" />
+                            <figure class="shape-grid shape-grid--single" data-detect-viewport>
+                                <svg width="64" height="64px" viewBox="0 0 177.3 177.3">
+                                    <line fill="none" stroke="#F2BF22" stroke-width="7.5457" stroke-miterlimit="10" x1="228.8" y1="4.3" x2="-41.9" y2="4.4"/>
+                                    <path fill="none" stroke="#8965A6" stroke-width="7.7403" stroke-miterlimit="10" d="M202.9,46.6l-143.1,0
+                                    	c-5.7,0-10.4,4.7-10.4,10.4v132"/>
+                                    <line fill="none" stroke="#EC4141" stroke-width="7.5457" stroke-miterlimit="10" x1="228.8" y1="88.7" x2="-42" y2="88.8"/>
+                                    <line fill="none" stroke="#66B9D5" stroke-width="7.5457" stroke-miterlimit="10" x1="45.2" y1="130.9" x2="-47.6" y2="131"/>
+                                    <path fill="none" stroke="#F76C81" stroke-width="7.5457" stroke-miterlimit="10" d="M-74.7,46.6H5.7c2.8,0,5.4,1.1,7.3,3
+                                    	l120.5,120.5c1.9,1.9,4.6,3,7.3,3h81.6"/>
+                                    <path fill="none" stroke="#65C3B7" stroke-width="7.5457" stroke-miterlimit="10" d="M-8.8,173.2H81c5.7,0,10.4-4.6,10.4-10.4v-21.5
+                                    	c0-5.7,4.6-10.4,10.4-10.4l120.8-0.1"/>
+                                    <path fill="none" stroke="#F2BF22" stroke-width="7.5457" stroke-miterlimit="10" d="M231.7,88.8h-66.9c-23.1,0-41.9-18.7-41.9-41.9
+                                    	V4.3"/>
+                                    <circle fill="#151515" cx="123" cy="4.2" r="4.4"/>
+                                    <circle fill="none" stroke="#F0BF20" stroke-width="7.9511" stroke-miterlimit="10" cx="123" cy="4.2" r="8.2"/>
+                                    <circle fill="#F56C81" cx="49.4" cy="88.7" r="4.4"/>
+                                    <circle fill="none" stroke="#151515" stroke-width="7.9511" stroke-miterlimit="10" cx="49.4" cy="88.7" r="8.2"/>
+                                    <circle fill="#151515" cx="49.4" cy="130.9" r="4.4"/>
+                                    <circle fill="none" stroke="#63B6CE" stroke-width="7.9511" stroke-miterlimit="10" cx="49.4" cy="130.9" r="8.2"/>
+                                </svg>
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -39,78 +59,58 @@ id: home
 </section>
 
 
-<section id="about" class="container-full js-page-section">
-    <div class="container pt-9 pb-9 pl-3 pr-3">
-        <div class="">
+<section id="about" class="container-full page-section js-page-section">
+    <div class="page-section__inner container">
+        <header class="pb-7">
+            <span class="page-section__hd">About</span>
             <h2 class="h2">About GitMerge</h2>
+        </header>
 
+        <div class="d-flex">
             {% include patterns/pattern-about.html %}
 
-            <p>Git Merge is the pre-eminent Git-focused conference: a full-day offering technical content and user case studies, plus a day of workshops for Git users of all levels. Git Merge 2018 takes place March 8th in Barcelona, Spain at the Convent Del Àngels at the MACBA.</p>
+            <div class="pl-md-4">
+                <p class="p-lg">Git Merge is the pre-eminent Git-focused conference: a full-day offering technical content and user case studies, plus a day of workshops for Git users of all levels. Git Merge 2018 takes place March 8th in Barcelona, Spain at the Convent Del Àngels at the MACBA.</p>
 
-            <p>Git Merge is dedicated to amplifying new voices in the Git community and to showcasing the most thought-provoking projects from contributors, maintainers and community managers around the world.</p>
+                <p class="p-lg">Git Merge is dedicated to amplifying new voices in the Git community and to showcasing the most thought-provoking projects from contributors, maintainers and community managers around the world.</p>
+            </div>
+
         </div>
 
     </div>
 </section>
 
 
-<section id="speakers" class="container-full js-page-section">
-    <div class="container pt-9 pb-9">
-        <h2 class="h2">Speakers</h2>
+<section id="speakers" class="container-full page-section js-page-section">
+    <div class="page-section__inner container">
+        <header class="pb-6">
+            <span class="page-section__hd">Speakers</span>
+            <h2 class="h2">Speakers</h2>
+        </header>
 
-        {% include patterns/pattern-speakers.html %}
-
-        <div class="shape-grid shape-grid--2x3">
-            <div class="two-rows">
-                <img src="/assets/images/squares/two-tall.svg" alt="" />
+        <div class="d-md-flex">
+            <div class="shape-wrap col-md-3">
+                {% include patterns/pattern-speakers.html %}
             </div>
-            <div>
-                <img src="/assets/images/squares/intro-top.svg" alt="" />
-            </div>
-            <div>
-                <img src="/assets/images/squares/intro-top.svg" alt="" />
-            </div>
-            <div>
-                <img src="/assets/images/squares/intro-top.svg" alt="" />
-            </div>
+            {% include speakers.html %}
         </div>
     </div>
 </section>
 
 
-<section id="schedule" class="container-full js-page-section">
-    <div class="container pt-9 pb-9">
-        <h2 class="h2">Schedule</h2>
+<section id="schedule" class="container-full page-section js-page-section">
+    <div class="page-section__inner container">
+        <header>
+            <span class="page-section__hd">Schedule</span>
+            <h2 class="h2">Schedule</h2>
+            {% include patterns/pattern-schedule.html %}
+        </header>
 
-        {% include patterns/pattern-schedule.html %}
-
-        <div class="shape-grid">
-            <span class="spacer"></span>
-            <span class="spacer"></span>
-            <div>
-                <img src="/assets/images/squares/intro-top.svg" alt="" />
-            </div>
-
-            <div class="two-rows">
-                <img src="/assets/images/squares/two-tall.svg" alt="" />
-            </div>
-            <div>
-                <img src="/assets/images/squares/intro-top.svg" alt="" />
-            </div>
-            <div>
-                <img src="/assets/images/squares/intro-top.svg" alt="" />
-            </div>
-        </div>
+        {% include schedule.html %}
     </div>
 </section>
 
 
-<section id="faq" class="container-full js-page-section">
-    <div class="container pt-9 pb-9">
-        <h2 class="h2">FAQ</h2>
+{% include faq.html %}
 
-        {% include patterns/pattern-faq.html %}
-
-    </div>
-</section>
+{% include sponsors.html %}

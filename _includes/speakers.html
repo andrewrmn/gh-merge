@@ -1,0 +1,57 @@
+<ul class="speaker-list">
+{% for session in site.data.sessions %}
+    {% for speaker in session.speakers %}
+        {% assign speakerId = speaker.name|downcase| replace({'&': 'and'}) | slugify %}
+
+        <li class="speaker" id="{{ speakerId }}" data-animate-in="up">
+            <a class="open-speaker-modal" href="{{ speakerId }}">
+                <figure class="speaker__image-wrap">
+                    <img class="speaker__image" src="{{ baseUrl }}/assets/images/speakers/{{ speaker.image }}" alt="{{ speaker.name }} headshot" />
+                 </figure>
+                <div class="speaker__info">
+                    <span class="speaker__info-border"></span>
+                    <h3 class="speaker__name h3">{{ speaker.name }}</h3>
+                    <p class="speaker__creds">{{ speaker.title }}, {{ speaker.company }}</p>
+                </div>
+            </a>
+            <div class="speaker__modal-content">
+                {% if speaker.twitter %}<a class="speaker__twitter" href="https://twitter.com/{{ speaker.twitter }}" target="view speakers twitter page">@{{ speaker.twitter }}</a>{% endif %}
+                <p class="speaker__bio">{{ speaker.bio }}</p>
+
+                <div>
+                    <h4 class="h3 speaker__session">Session</h4>
+                    <p class="speaker__session-time">14:00 – 14:30</p>
+                    <p class="speaker__session-name">Scaling Mercurial at Facebook: Insights from the Other Side</p>
+                </div>
+            </div>
+        </li>
+
+    {% endfor %}
+{% endfor %}
+</ul>
+
+
+
+<div class="modal-wrap" id="speaker-modal">
+    <div class="modal">
+        <div class="modal__sidebar">
+            <div class="modal__img">
+            </div>
+            <div class="modal__sidebar-shapes">
+                {% include patterns/pattern-modal.html %}
+            </div>
+        </div>
+        <div class="modal__body">
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <a class="modal__close" href="#">
+        <div>
+            <p class="sr-only">Close Modal</p>
+            <svg width="20" height="20"><use xlink:href="#shape-close"></use></svg>
+        </div>
+    </a>
+</div>

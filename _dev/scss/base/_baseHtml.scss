@@ -67,7 +67,7 @@ picture > * {
 
 @mixin selection {
     color: $white;
-    background: $blue-500;
+    background: $red;
 }
 
 ::selection {
