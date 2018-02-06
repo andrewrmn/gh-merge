@@ -2,7 +2,7 @@
 {% for session in site.data.sessions %}
     {% for speaker in session.speakers %}
         {% assign speakerId = speaker.name|downcase| replace({'&': 'and'}) | slugify %}
-
+        {% if speaker.name %}
         <li class="speaker" id="{{ speakerId }}" data-animate-in="up">
             <a class="open-speaker-modal" href="{{ speakerId }}">
                 <figure class="speaker__image-wrap">
@@ -20,12 +20,12 @@
 
                 <div>
                     <h4 class="h3 speaker__session">Session</h4>
-                    <p class="speaker__session-time">14:00 – 14:30</p>
-                    <p class="speaker__session-name">Scaling Mercurial at Facebook: Insights from the Other Side</p>
+                    <p class="speaker__session-time">{{ session.time }} | Day {{ session.day }}</p>
+                    <p class="speaker__session-name">{{ session.talk }}</p>
                 </div>
             </div>
         </li>
-
+        {% endif %}
     {% endfor %}
 {% endfor %}
 </ul>

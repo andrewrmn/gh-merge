@@ -21,7 +21,11 @@ body.modal-is-open {
         width: 100%;
         height: 100%;
         overflow: scroll;
-        display: none;
+        //display: none;
+        pointer-events: none;
+        opacity: .5;
+        visibility: hidden;
+        transition: opacity $trans-modal;
     }
 
     @include start-at($modal-bp) {
@@ -37,7 +41,10 @@ body.modal-is-open {
     @include stop-at(799px) {
         &.is-active {
             .modal {
-                display: block;
+                pointer-events: auto;
+                //display: block;
+                visibility: visible;
+                opacity: 1;
             }
         }
     }
@@ -74,7 +81,7 @@ body.modal-is-open {
 .modal__body {
     background: $black;
     width: 100%;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(100%, 0, 0);
     transition: transform $trans-modal;
     padding: 36px $wrapper-padding;
 
@@ -89,6 +96,7 @@ body.modal-is-open {
         height: auto;
         overflow: scroll;
         padding: 72px $wrapper-padding;
+        transform: translate3d(0, -100%, 0);
 
         > * {
             max-width: 780px;
@@ -142,20 +150,22 @@ body.modal-is-open {
 
 
 
-
 // ----------------------------------------
 // Sidebar
 // ----------------------------------------
 
 .modal__sidebar {
     position: relative;
+    background: $black;
     z-index: 12;
     height: auto;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(-100%, 0, 0);
     transition: transform $trans-modal;
 
     @include start-at(460px) {
         display: flex;
+        align-items: stretch;
+        justify-content: center;
 
         > * {
             width: 50%;
@@ -171,6 +181,8 @@ body.modal-is-open {
         height: 100%;
         max-width: 426px;
         flex-direction: column;
+        justify-content: flex-start;
+        transform: translate3d(0, 100%, 0);
 
         > * {
             width: 100%;
@@ -193,7 +205,15 @@ body.modal-is-open {
         transform: translate3d(0, 0, 0);
 
         img {
-            opacity: 1;
+            opacity: 0;
+            width: 101%;
+            height: 101%;
+        }
+    }
+
+    &.in-view {
+        img {
+            opacity: 0.9;
         }
     }
 }
@@ -206,6 +226,9 @@ body.modal-is-open {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    @include start-at($modal-bp) {
         height: 100%;
     }
 

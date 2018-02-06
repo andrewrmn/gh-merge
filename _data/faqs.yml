@@ -1,46 +1,70 @@
 - group: Registration
   questions:
-    - question: This is a question right here that you can view and see?
-      answer: We will include some copy here that gives an <a href="">introduction</a> to the various options available for sponsorship.
-
-    - question: This is another question?
-      answer: Codecov provides highly integrated tools to group, merge, archive and compare coverage reports. Whether your team is comparing changes in a pull request or reviewing a single commit, Codecov will improve the code review workflow and quality.
-
-    - question: This is a question right here that you can view and see?
-      answer: Proin ipsum est, tempor eget vulputate a, gravida id metus. In id odio tempor purus ultricies mattis. Nam vulputate eros quis congue varius. Morbi vulputate eu velit in bibendum. Suspendisse potenti. Sed convallis, erat vel.
+    - question: Can I get a receipt for my ticket?
+      answer: Yes. Just email <a href="mailto:events@github.com">events@github.com</a> with your request.
 
 
-- group: Venue/Accessibility
+- group: Venue and accessibility
   questions:
-    - question: This is a question right here that you can view and see?
-      answer: Proin ipsum est, tempor eget vulputate a, gravida id metus. In id odio tempor purus ultricies mattis. Nam vulputate eros quis congue varius. Morbi vulputate eu velit in bibendum. Suspendisse potenti. Sed convallis, erat vel.
+    - question: Will the conference have wifi?
+      answer: Yes.
 
-    - question: This is a question right here that you can view and see?
-      answer: We will include some copy here that gives an <a href="">introduction</a> to the various options available for sponsorship.
+    - question: Are you providing captioning or language translation?
+      answer: If you need these services, send us a note at <a href="mailto:events@github.com">events@github.com</a>—we’ll make sure you’re set up with everything you need to enjoy in the event.
 
-    - question: This is another question?
-      answer: Codecov provides highly integrated tools to group, merge, archive and compare coverage reports. Whether your team is comparing changes in a pull request or reviewing a single commit, Codecov will improve the code review workflow and quality.
+    - question: Will there be a nursing room on site?
+      answer: Yes, we’ve arranged a private room for nursing, and we can provide refrigeration upon request.
+
+    - question: Will there be gender neutral restrooms on site?
+      answer: Yes.
 
 
-- group: Help Desk
+- group: Luggage and lost items
   questions:
-    - question: This is a question right here that you can view and see?
-      answer: We will include some copy here that gives an <a href="">introduction</a> to the various options available for sponsorship.
+    - question: Will there be a place for me to store things?
+      answer: Yes, we’ll have a coat check area. You’re welcome to drop off luggage, but please don’t leave valuables.
 
-    - question: This is another question?
-      answer: Codecov provides highly integrated tools to group, merge, archive and compare coverage reports. Whether your team is comparing changes in a pull request or reviewing a single commit, Codecov will improve the code review workflow and quality.
-
-    - question: This is a question right here that you can view and see?
-      answer: Proin ipsum est, tempor eget vulputate a, gravida id metus. In id odio tempor purus ultricies mattis. Nam vulputate eros quis congue varius. Morbi vulputate eu velit in bibendum. Suspendisse potenti. Sed convallis, erat vel.
+    - question: Where do I go if I lose something?
+      answer: If the event is in progress, stop by the Help Desk to check if someone dropped off your lost item. After the event, send us a note with a description of the item at <a href="mailto:events@github.com">events@github.com</a>.
 
 
-- group: Refunds/Cancellations/Waitlist
+- group: Refunds and waitlists
   questions:
-    - question: This is a question right here that you can view and see?
-      answer: Proin ipsum est, tempor eget vulputate a, gravida id metus. In id odio tempor purus ultricies mattis. Nam vulputate eros quis congue varius. Morbi vulputate eu velit in bibendum. Suspendisse potenti. Sed convallis, erat vel.
+    - question: Can I get a refund for my ticket?
+      answer: Yes. You can get a refund for Git Merge 2018 through March 1st. After that day we will no longer be offering refunds.
 
-    - question: This is a question right here that you can view and see?
-      answer: We will include some copy here that gives an <a href="">introduction</a> to the various options available for sponsorship.
+    - question: I am on the waitlist for workshops. When will I be informed if I am given a spot?
+      answer: Yes, we’ll email you 24 hours before Workshop Day if a spot opens up. Please note&#58; We will not be admitting people to Workshop Day if they aren’t registered on the day of the event.
 
-    - question: This is another question?
-      answer: Codecov provides highly integrated tools to group, merge, archive and compare coverage reports. Whether your team is comparing changes in a pull request or reviewing a single commit, Codecov will improve the code review workflow and quality.
+
+- group: Sessions and content
+  questions:
+    - question: Are the session recorded?
+      answer: All sessions will be recorded
+
+
+- group: Food and beverage
+  questions:
+    - question: Do you provide breakfast and lunch?
+      answer: Yes, we’ll provide complimentary breakfast and lunch on both days.
+
+    - question: What time are meals served?
+      answer: You can see meal times in <a href="/#schedule">our event schedule</a>. Please leave enough time to pick up your badge and grab a bite to eat before start time.
+
+    - questions: Do you accommodate special dietary needs?
+      answer: We provide vegetarian, vegan, dairy-free, and gluten-free options. If you have additional dietary needs, please let us know at least 48 hours in advance, and we’ll do our best to provide an option that works for you.
+
+
+- group: After party
+  questions:
+    - question: What time is the afterparty?
+      answer: The After Party will be at the MACBA directly after the conference from 5pm - 8pm
+
+    - question: Do I need my badge for entry?
+      answer: Yes. All attendees will need to keep their badge for the After Party.
+
+    - question: Will non-alcoholic beverages be available?
+      answer: Yes.
+
+    - question: Can people who aren’t attending the conference join?
+      answer: At this time we are unable to accommodate people who are not registered for Git Merge 2018.

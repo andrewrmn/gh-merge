@@ -58,7 +58,7 @@ $btn-height: 44px;
         }
 
         &:after {
-            opacity: 0.3;
+            opacity: 0.5;
             background: url('../images/button-hover.svg') top left / $btn-width 100% no-repeat
         }
     }
@@ -80,7 +80,6 @@ $btn-height: 44px;
     position: relative;
     z-index: 1;
     transition: color $trans;
-    //background: red;
     padding-right: 40px;
 
     &:before,

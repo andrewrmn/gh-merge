@@ -1,8 +1,8 @@
-- time: 9:00
+- time: "9:00"
   day: 1
   talk: Registration ✏️ & Breakfast 🥣
 
-- time: 10:00
+- time: "10:00"
   day: 1
   talk: Welcome & Opening Keynote
   speakers:
@@ -13,7 +13,7 @@
       twitter: leomessi
       bio: Lionel "Leo" Messi is an Argentine professional footballer who plays as a forward for Spanish club Barcelona and the Argentina national team. Often considered the best player in the world and regarded by many as the greatest of all time, Messi has a record-tying five Ballon d'Or awards, four of which he won consecutively, and a record-tying four European Golden Shoes.
 
-- time: 10:30
+- time: "10:30"
   day: 1
   talk: Linux Kernel Development - Going Faster Than You Think
   speakers:
@@ -37,7 +37,7 @@
 
 
 
-- time: 9:00
+- time: "9:00"
   day: 2
   talk: Registration ✏️ & Breakfast 🥣
 
@@ -45,30 +45,142 @@
   day: 2
   talk: Welcome & Opening Keynote
   speakers:
-    - name: Lionel Messi
-      title: Right Wing/ Forward
-      company: Barcelona FC
-      image: leo-messi.jpg
-      twitter: leomessi
-      bio: Lionel "Leo" Messi is an Argentine professional footballer who plays as a forward for Spanish club Barcelona and the Argentina national team. Often considered the best player in the world and regarded by many as the greatest of all time, Messi has a record-tying five Ballon d'Or awards, four of which he won consecutively, and a record-tying four European Golden Shoes.
+    - name: Neymar
+      title: Left Wing/ Forward
+      company: Paris Saint-Germain
+      image: neymar.jpg
+      twitter: neymarjr
+      bio: Neymar da Silva Santos Júnior, commonly known as Neymar or Neymar Jr., is a Brazilian professional footballer who plays as a forward for French club Paris Saint-Germain and the Brazil national team. Neymar came into prominence at an early age at Santos, where he made his professional debut aged 17. He helped the club win two successive Campeonato Paulista championships, a Copa do Brasil, and the 2011 Copa Libertadores, Santos' first continental title since 1963. Neymar was twice named the South American Footballer of the Year, in 2011 and 2012, before relocating to Europe to join Barcelona. As part of Barça's attacking trio with Lionel Messi and Luis Suárez, he won the continental treble of La Liga, the Copa del Rey, and the UEFA Champions League in the 2014–15 season, followed the next year by the domestic double. He came third for the FIFA Ballon d'Or in 2015. In August 2017, Neymar moved from Barcelona to Paris Saint-Germain in a transaction worth €222 million, making him the world's most expensive player.
 
-- time: 10:30
+    - name: Paul Pogba
+      title: Central Midfielder
+      company: Manchester United F.C.
+      image: paul-pogba.jpg
+      twitter: paulpogba
+      bio: Paul Labile Pogba is a French professional footballer who plays for Premier League club Manchester United and the French national team. He operates primarily as a central midfielder and is comfortable playing both in attack and defence.After beginning his career with Manchester United in 2011, Pogba joined Italian side Juventus in 2012, and helped the club to four consecutive Serie A titles, as well as two Coppa Italia and two Supercoppa Italiana titles. During his time with the club, he established himself as one of the most promising young players in the world, and received the Golden Boy award in 2013, followed by the Bravo Award in 2014 and was named by The Guardian as one of the ten most promising young players in Europe. In 2016, Pogba was named to the 2015 UEFA Team of the Year as well as the 2015 FIFA FIFPro World XI, after helping Juventus to the 2015 UEFA Champions League Final. Despite leaving Manchester United on a free transfer, Pogba returned to the club in 2016 for a then-world record transfer fee of €105 million (£89.3 million).
+
+- time: "10:30"
+  day: 2
+  talk: Coffee Break ☕
+
+- time: "10:45"
   day: 2
   talk: Linux Kernel Development - Going Faster Than You Think
   speakers:
-    - name: Cristiano Ronaldo
-      title: Left Wing/ Attacker
-      company: Real Madrid C.F.
-      image: cristiano-ronaldo.jpg
-      twitter: Cristiano
-      bio: Cristiano Ronaldo is a Portuguese professional footballer who plays as a forward for Spanish club Real Madrid and the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest of all time, Ronaldo has five Ballon d'Or awards, the most for a European player and is tied for most all-time. He is the first player in history to win four European Golden Shoes. He has won 25 trophies in his career, including five league titles, four UEFA Champions League titles and one UEFA European Championship. A prolific goalscorer, Ronaldo holds the records for most official goals scored in the top five European leagues (377), the UEFA Champions League (114), the UEFA European Championship (29) and the FIFA Club World Cup (7), as well as most goals scored in a UEFA Champions League season (17). He has scored more than 600 senior career goals for club and country.
+    - name: Mohamed Salah
+      title: Right Wing/ Attacker
+      company: Liverpool F.C.
+      image: mo-salah.jpg
+      twitter:
+      bio: Mohamed Salah Ghaly is an Egyptian professional footballer who plays as a forward for Liverpool and the Egyptian national team. Salah Started his career with El Mokawloon then transferred to FC Basel in 2012, then he played for Chelsea, Fiorentina (on loan) and for Roma before transferring to Liverpool in 2017. As well as representing the Egyptian national team since 2011, He won a bronze medal in Africa U-20 Cup of Nations, he also participated in the 2011 FIFA U-20 World Cup, the 2012 Summer Olympics, 2017 CAF Cup of Nations and he reached the final but lost it, then he successfully qualified with his national team to the FIFA World Cup 2018 and he became the top scorer of FIFA World Cup qualification (CAF).
 
-    - name: Antoine Griezmann
-      title: Striker/ Forward
-      company: Atlético Madrid
-      image: antoine-griezmann.jpg
-      twitter: AntoGriezmann
-      bio: |
-        Antoine Griezmann is a French professional footballer who plays as a forward for Spanish club Atlético Madrid and the French national team.
+- time: "11:15"
+  day: 2
+  talk: Session
+  speakers:
+    - name:
+      title:
+      company:
+      image:
+      twitter:
+      bio:
 
-        He began his career at Real Sociedad, making his debut in 2009 and winning the Segunda División title in his first season. Across five seasons there, he scored 52 goals in 201 official matches. In 2014, he transferred to Atlético Madrid for €30 million. For his performances throughout 2016, he was shortlisted for the Ballon d'Or 2016 Award in which he finished in third place.
+- time: "11:45"
+  day: 2
+  talk: Session
+  speakers:
+    - name:
+      title:
+      company:
+      image:
+      twitter:
+      bio:
+
+- time: "12:15"
+  day: 2
+  talk: Lunch 🥪 🥗 🍕
+
+- time: "1:30"
+  day: 2
+  talk: Session
+  speakers:
+    - name:
+      title:
+      company:
+      image:
+      twitter:
+      bio:
+
+- time: "2:00"
+  day: 2
+  talk: Session
+  speakers:
+    - name:
+      title:
+      company:
+      image:
+      twitter:
+      bio:
+
+- time: "2:30"
+  day: 2
+  talk: Coffee Break ☕
+
+- time: "2:45"
+  day: 2
+  talk: Session
+  speakers:
+    - name:
+      title:
+      company:
+      image:
+      twitter:
+      bio:
+
+- time: "3:15"
+  day: 2
+  talk: Session
+  speakers:
+    - name:
+      title:
+      company:
+      image:
+      twitter:
+      bio:
+
+- time: "3:45"
+  day: 2
+  talk: Coffee Break ☕
+
+- time: "4:00"
+  day: 2
+  talk: Lightning talks
+  speakers:
+    - name:
+      title:
+      company:
+      image:
+      twitter:
+      bio:
+
+- time: "4:30"
+  day: 2
+  talk: Session
+  speakers:
+    - name:
+      title:
+      company:
+      image:
+      twitter:
+      bio:
+
+- time: "5:00"
+  day: 2
+  talk: Session
+  speakers:
+    - name:
+      title:
+      company:
+      image:
+      twitter:
+      bio:

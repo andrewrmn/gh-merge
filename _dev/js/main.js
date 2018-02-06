@@ -10,19 +10,11 @@ var andrewrossco = andrewrossco || {};
     $(function() {
         APP.App.init();
 		APP.Header.init();
-        //APP.ClickFunciton.init();
-        //APP.ClickGroup.init();
-        //APP.Tabs.init();
         APP.ScrollTo.init();
-
         APP.Viewport.init();
         APP.Sections.init();
-
         APP.Lines.init();
-
-
         APP.Modal.init();
-
         APP.Tabs.init();
     });
 
@@ -162,7 +154,7 @@ APP.Sections = {
             var el = $(this),
 				topPos = el.offset().top - 54,
                 bottomPos = el.offset().top + el.innerHeight(),
-                elId = '#' + el.attr('ID'),
+                elId = '/#' + el.attr('ID'),
                 navLinks = $('.main-nav a');
 
 			w.resize(function() {
@@ -320,7 +312,6 @@ APP.Lines = {
 
 // ---------------------------------------------------------------------
 // Scroll to
-// Used for smooth scrolling to elements
 // ---------------------------------------------------------------------
 
 APP.ScrollTo = {
@@ -384,12 +375,12 @@ APP.Modal = {
 
         function getSpeakerModal(el){
             var speaker = el,
-                color = speaker.find('.speaker__info-border').css('background'),
+                color = speaker.find('.speaker__info-border').css('background-color'),
                 img = speaker.find('.speaker__image-wrap').clone(),
                 info = speaker.find('.speaker__info').clone(),
                 modalInfo = speaker.find('.speaker__modal-content').clone();
 
-            modalImg.append(img);
+            modalImg.append(img).delay( 800 ).addClass('in-view');
             modalSidebar.css('background', color);
 
             modalBody.append(info);
@@ -426,7 +417,7 @@ APP.Modal = {
             var hash = window.location.hash.replace('#', ''),
                 aLink = $('.open-modal-sched');
 
-            $('.speaker').each(function(){
+            $('.speaker').each(function() {
                 var el = $(this),
                     modalId = el.attr('ID');
 

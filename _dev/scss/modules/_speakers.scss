@@ -9,27 +9,30 @@ $speaker-list-bp: 720px;
     justify-content: space-between;
     width: 100%;
     max-width: 820px;
+    overflow: hidden;
+    padding-top: 20px;
 
     > * {
-        width: 100%;
+        width: calc(50% - 10px);
+    }
 
-        @include start-at($speaker-list-bp) {
-            width: calc(50% - 15px);
-        }
+
+    > .speaker:nth-child(2n + 1) {
+        margin-top: -20px;
     }
 
     @include start-at($speaker-list-bp) {
+        padding-top: 80px;
 
         > .speaker:nth-child(2n + 1) {
             margin-top: -80px;
         }
-
     }
 }
 
 .speaker {
     max-width: 394px;
-    margin: 0 auto 40px;
+    margin: 0 auto 20px;
     position: relative;
     z-index: 1;
 
@@ -54,8 +57,13 @@ $speaker-list-bp: 720px;
     overflow: hidden;
     height: 0;
     padding-bottom: 100%;
-    max-width: calc(100% - 20px);
-    transform: translate3d(20px, 0, 0);
+    max-width: calc(100% - 5px);
+    transform: translate3d(5px, 0, 0);
+
+    @include start-at($speaker-list-bp) {
+        max-width: calc(100% - 20px);
+        transform: translate3d(20px, 0, 0);
+    }
 
     img {
         object-fit: cover;
@@ -69,11 +77,29 @@ $speaker-list-bp: 720px;
 
 .speaker .speaker__info {
     background: $almost-black;
-    padding: 16px 24px;
-    max-width: calc(100% - 20px);
+    padding: 16px 16px;
+    max-width: calc(100% - 5px);
     position: relative;
-    height: 120px;
+    min-height: 110px;
     z-index: 1;
+
+    @include start-at($speaker-list-bp) {
+        max-width: calc(100% - 20px);
+        padding: 16px 24px;
+        height: 120px;
+    }
+}
+
+@include stop-at($speaker-list-bp) {
+    .speaker .speaker__info {
+        .speaker__name {
+            font-size: 15px;
+        }
+
+        .speaker__creds {
+            font-size: 10px;
+        }
+    }
 }
 
 .speaker .speaker__info-border {

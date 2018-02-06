@@ -30,11 +30,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-collections:
-  events:
-    output: true
-
-
 sass:
   # Where you keep your scss files
   # sass_dir: assets/css/

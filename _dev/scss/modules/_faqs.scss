@@ -10,9 +10,18 @@
         color: $gray;
         padding: 4px 0;
         margin: 4px 0;
+        transition: color $trans;
 
-        &.selected {
+        &.selected,
+        &:hover {
             color: $yellow;
         }
+    }
+}
+
+.faq-content {
+    a {
+        color: $yellow;
+        text-decoration: underline;
     }
 }
